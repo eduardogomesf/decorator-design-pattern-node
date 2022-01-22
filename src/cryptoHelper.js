@@ -36,7 +36,7 @@ class CryptoHelper {
         const cipher = createDecipheriv(...this.cryptoConfig);
 
         return cipher
-        .update(data, 'base64', 'utf-8')
+        .update(data.toString(), 'base64', 'utf-8')
         .concat(cipher.final('utf-8'))
     }
 }   
