@@ -5,7 +5,7 @@ const { Decorator } = require('./decorator');
 
 (async () => {
     const config = {
-        cryptoKey: 'minha-senha-super-segura'
+        cryptoKey: 'my-very-secure-password-'
     }
     const cryptoHelper = await CryptoHelper.setup(config);
     const customFsPromises = new CustomFsPromises({ cryptoHelper }).configure();
